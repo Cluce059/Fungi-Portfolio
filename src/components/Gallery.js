@@ -1,17 +1,16 @@
 import React from 'react';
 import PhotoList from './PhotoList';
 
-function Gallery({ currentCategory }) {
-  const { name, description } = currentCategory;
-  //console.log(currentCategory);
+
+function Gallery(props) {
+  const { currentCategory } = props;
   return (
     <section>
-      <h1>{name}</h1>
-      <p>{description}</p>
+      <h1>{currentCategory.name}</h1>
+      <p>{currentCategory.description}</p>
       <PhotoList category={currentCategory.name} />
-
     </section>
   );
-};
+}
 
 export default Gallery;

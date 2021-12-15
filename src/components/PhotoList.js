@@ -2,100 +2,127 @@ import React, { useState } from 'react';
 import Modal from './Modal';
 
 const PhotoList = ({ category }) => {
-  //const [isModalOpen, setIsModalOpen] = useState(false);
-  //const [currentPhoto, setCurrentPhoto] = useState();
-    console.log(category)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPhoto, setCurrentPhoto] = useState();
+    //console.log(category)
   const [photos] = useState([
     {
-      name: 'Glass Item #1',
-      category: 'Comissions',
+      name: 'Fungus #1',
+      category: 'Boletes',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #2',
-      category: 'Comissions',
+      name: 'Fungus #2',
+      category: 'Boletes',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #3',
-      category: 'Comissions',
+      name: 'Fungus #3',
+      category: 'Boletes',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #4',
-      category: 'Comissions',
+      name: 'Fungus #4',
+      category: 'Boletes',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #5',
-      category: 'Functional',
+      name: 'Fungus #5',
+      category: 'Gilled',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #6',
-      category: 'Functional',
+      name: 'Fungus #6',
+      category: 'Gilled',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #7',
-      category: 'Functional',
+      name: 'Fungus #7',
+      category: 'Gilled',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #8',
-      category: 'Functional',
+      name: 'Fungus #8',
+      category: 'Gilled',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-        name: 'Glass Item #9',
-        category: 'Functional',
+        name: 'Fungus #9',
+        category: 'Gilled',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #10',
-      category: 'Glassware',
+      name: 'Fungus #10',
+      category: 'Polypores',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #11',
-      category: 'Glassware',
+      name: 'Fungus #11',
+      category: 'Polypores',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #12',
-      category: 'Glassware',
+      name: 'Fungus #12',
+      category: 'Polypores',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Glass Item #13',
-      category: 'Glassware',
+      name: 'Fungus #13',
+      category: 'Polypores',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-        name: 'Glass Item #14',
-        category: 'Glassware',
+        name: 'Fungus #14',
+        category: 'Polypores',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+        name: 'Fungus #15',
+        category: 'Unclassified',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+        name: 'Fungus #16',
+        category: 'Unclassified',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+        name: 'Fungus #17',
+        category: 'Unclassified',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+        name: 'Fungus #18',
+        category: 'Unclassified',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+        name: 'Fungus #19',
+        category: 'Unclassified',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     }
 ]);
 
   const currentPhotos = photos.filter((photo) => photo.category === category);
   console.log(currentPhotos)
-  /*
+  
   const toggleModal = (image, i) => {
     setCurrentPhoto({ ...image, index: i });
     setIsModalOpen(!isModalOpen);
 
-    glass-port\src\assets\small\Glassware\0.jpg
+    //glass-port\src\assets\small\Glassware\0.jpg
   };
-*/
+
   return (
     <div>
+      {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} /> }
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
             src={require(`../assets/small/${category}/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
+            onClick={() => toggleModal(image, i)}
             key={image.name}
           />
         ))}
