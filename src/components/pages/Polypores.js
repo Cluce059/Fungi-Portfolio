@@ -56,7 +56,57 @@ function Polypores() {
       name: 'Fungus #11',
       category: 'Polypores',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-  }
+    },
+    {
+      name: 'Fungus #12',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Fungus #13',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Fungus #14',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+        name: 'Fungus #15',
+        category: 'Polypores',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Fungus #16',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Fungus #17',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Fungus #18',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Fungus #19',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+        name: 'Fungus #20',
+        category: 'Polypores',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Fungus #21',
+      category: 'Polypores',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    }
 ];
 
 

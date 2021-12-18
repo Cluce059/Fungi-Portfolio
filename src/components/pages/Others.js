@@ -16,16 +16,6 @@ function Others() {
       name: 'Fungus #3',
       category: 'Others',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-  },
-  {
-      name: 'Fungus #4',
-      category: 'Others',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-  },
-  {
-      name: 'Fungus #5',
-      category: 'Others',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
   }
 ];
 

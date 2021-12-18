@@ -19,11 +19,6 @@ function Teeth() {
       name: 'Fungus #3',
       category: 'Teeth',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Fungus #4',
-      category: 'Teeth',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     }
 ];
 
