@@ -6,25 +6,25 @@ function Dropdown(prop) {
  
 const DropItems = [
   {
-    title: 'Boletes',
-    path: '/Boletes',
-    cName: 'dropdown-link'
-  },
-  {
-    title: 'Gilled',
-    path: '/Gilled',
-    cName: 'dropdown-link'
-
-  },
-  {
     title: 'Polypores',
     path: '/Polypores',
     cName: 'dropdown-link'
+  },
+  {
+    title: 'Gills & ridges',
+    path: '/gillsAndRidges',
+    cName: 'dropdown-link'
 
   },
   {
-    title: 'Unclassified',
-    path: '/Unclassified',
+    title: 'Teeth',
+    path: '/Teeth',
+    cName: 'dropdown-link'
+
+  },
+  {
+    title: 'Others',
+    path: '/Others',
     cName: 'dropdown-link'
 
   }
@@ -40,10 +40,13 @@ const DropItems = [
       <ul
         onClick={prop.onCloseMobileView}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
+        id='dropdown_menu dropdown_menu--animated dropdown_menu-6'
       >
         {DropItems.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={index}
+            className='dropdown-item'
+            >
               <Link
                 className={item.cName}
                 to={item.path}

@@ -1,5 +1,13 @@
+:root {
+  --light-green: #8aea92ff;
+  --green-sheen: #80ada0ff;
+  --old-lavender: #5f5566ff;
+  --dark-purple: #33202aff;
+  --black: #000000ff;
+}
+
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: linear-gradient(90deg, rgb(51, 32, 42) 0%, rgb(51, 31, 35) 100%);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -14,6 +22,10 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+  }
+
+  .nav-logo:hover{
+    color: var(--light-green);
   }
   
   .fa-firstdraft {
@@ -46,6 +58,7 @@
   
   .nav-link:hover {
     border-radius: 4px;
+    color: var(--light-green);
     transition: all 0.2s ease-out;
   }
   
@@ -59,6 +72,10 @@
   
   .menu-icon {
     display: none;
+  }
+
+  .FaTimes, .FaGrip{
+    color:#fff;
   }
   
   @media screen and (max-width: 960px) {
@@ -106,6 +123,10 @@
       left: 0;
       transform: translate(25%, 50%);
     }
+
+    .nav-logo:hover{
+      color: var(--light-green);
+    }
   
     .menu-icon {
       display: block;
@@ -129,7 +150,7 @@
       margin: 2rem auto;
       border-radius: 4px;
       width: 120%;
-      background: #5faa7e;
+      background: var(--light-green);
       text-decoration: none;
       color: #fff;
       font-size: 1.5rem;
@@ -137,11 +158,9 @@
   
     .nav-link-mobile:hover {
       background: #fff;
-      color: #35c26b;
+      color: var(--light-green);
       transition: 250ms;
     }
   
-    button {
-      display: none;
-    }
+  
   }

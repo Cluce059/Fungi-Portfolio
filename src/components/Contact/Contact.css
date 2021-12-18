@@ -5,11 +5,8 @@
 
 .section-title{
     text-align: center;
-    margin: 0 auto;
-    padding: 40px 0;
-    font: 300 60px 'Oswald', sans-serif;
+
     color: rgb(15, 14, 14);
-    text-transform: uppercase;
     letter-spacing: 6px;
 }
 

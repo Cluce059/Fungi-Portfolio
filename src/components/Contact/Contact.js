@@ -4,6 +4,7 @@ import { Form, Input, TextArea } from 'semantic-ui-react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import 'dotenv';
+import { FaPaperPlane } from 'react-icons/fa';
 
 /**implement 'role' tag for screen readers */
 const SERVICE_ID = process.env.SERVICE_ID;
@@ -69,7 +70,7 @@ function ContactForm() {
         />
         <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
         <div class="alt-send-button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          <i> <FaPaperPlane/></i><span class="send-text">SEND</span>
         </div>
       
       </button>

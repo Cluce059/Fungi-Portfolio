@@ -1,3 +1,12 @@
+  
+  :root {
+    --light-green: #8aea92ff;
+    --green-sheen: #80ada0ff;
+    --old-lavender: #5f5566ff;
+    --dark-purple: #33202aff;
+    --black: #000000ff;
+  }
+
   .dropdown-menu {
     width: 200px;
     position: absolute;
@@ -11,7 +20,7 @@
   }
   
   .dropdown-link:hover {
-    color: #5cff85;
+    color: var(--light-green);
   }
   
   .dropdown-menu.clicked {
@@ -23,7 +32,7 @@
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: rgb(22, 21, 21);
+    color: var(--black);
     padding: 16px;
   }
   

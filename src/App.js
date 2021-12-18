@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Nav';
-import Boletes from './components/pages/Boletes';
-import Gilled from './components/pages/Gilled';
+import Teeth from './components/pages/Teeth';
+import gillsAndRidges from './components/pages/gillsAndRidges';
 import Polypores from './components/pages/Polypores';
-import Unclassified from './components/pages/Unclassified';
+import Others from './components/pages/Others';
 import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
     <Navbar />
     <Switch>
       <Route path='/' exact component={Home} />
-      <Route path='/Gilled' component={Gilled} />
+      <Route path='/gillsAndRidges' component={gillsAndRidges} />
       <Route path='/Polypores' component={Polypores} />
-      <Route path='/Boletes' component={Boletes} />
-      <Route path='/Unclassified' component={Unclassified} />
+      <Route path='/Teeth' component={Teeth} />
+      <Route path='/Others' component={Others} />
       <Route path='/Contact' component={Contact} />
     </Switch>
   </Router>

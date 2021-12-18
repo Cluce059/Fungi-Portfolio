@@ -32,7 +32,7 @@ function Nav() {
                 </NavLink>
                 <div className='menu-icon' onClick={handleClick}>
                 <div className='nav-icon' onClick={handleClick}>
-                    {click ? <FaTimes/> : <FaGripLines/>}
+                    {click ? <FaTimes className='FaTimes'/> : <FaGripLines className='FaGrip'/>}
                 </div>
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
