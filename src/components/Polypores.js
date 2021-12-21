@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function Polypores() {
   const Polypores = [
@@ -116,7 +116,7 @@ function Polypores() {
         {Polypores.map((image, i) => (
           <div>
           <img
-            src={require(`../../assets/small/Polypores/${i}.jpg`).default}
+            src={require(`../assets/small/Polypores/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             key={image.name}

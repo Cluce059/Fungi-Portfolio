@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function Others() {
   const Others = [
@@ -26,7 +26,7 @@ function Others() {
         {Others.map((image, i) => (
           <div>
           <img
-            src={require(`../../assets/small/Others/${i}.jpg`).default}
+            src={require(`../assets/small/Others/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             key={image.name}

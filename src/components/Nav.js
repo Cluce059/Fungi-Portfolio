@@ -1,9 +1,10 @@
 import React, { useState} from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+// import { capitalizeFirstLetter } from '../../utils/helpers';
 import { NavLink } from 'react-router-dom';
-import './Nav.css';
-import Dropdown from '../Dropdown/Dropdown';
+import '../styles/nav.css';
+import Dropdown from './Dropdown';
 import { FaGripLines, FaTimes, FaAngleDown } from 'react-icons/fa';
+import Toggle from './Toggle';
 
 function Nav() {
   const [click, setClick] = useState(false);
@@ -62,6 +63,7 @@ function Nav() {
                          Get in Touch
                     </NavLink>
                   </li>
+                  <Toggle/>
                 </ul>
             </nav>
         </>

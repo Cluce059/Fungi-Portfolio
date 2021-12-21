@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Dropdown.css';
+import '../styles/dropdown.css';
 import { Link } from 'react-router-dom';
 
 function Dropdown(prop) {
@@ -33,7 +33,7 @@ const DropItems = [
 
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+ 
 
   return (
     <>

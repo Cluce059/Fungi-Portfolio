@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function gillsAndRidges() {
   const gillsAndRidges = [
@@ -156,7 +156,7 @@ function gillsAndRidges() {
         {gillsAndRidges.map((image, i) => (
           <div>
           <img
-            src={require(`../../assets/small/gillsAndRidges/${i}.jpg`).default}
+            src={require(`../assets/small/gillsAndRidges/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             key={image.name}

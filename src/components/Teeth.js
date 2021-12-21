@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import Modal from '../Modal';
+import React from 'react';
+// import Modal from '../Modal';
 
 function Teeth() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   const Teeth = [
     {
@@ -29,7 +29,7 @@ function Teeth() {
         {Teeth.map((image, i) => (
           <div>
           <img
-            src={require(`../../assets/small/Teeth/${i}.jpg`).default}
+            src={require(`../assets/small/Teeth/${i}.jpg`).default}
             alt={image.name}
             className="img-thumbnail mx-1"
             key={image.name}
