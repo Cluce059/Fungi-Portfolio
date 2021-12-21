@@ -10,25 +10,21 @@ function Toggle() {
   //get current theme
   let theme = localStorage.getItem('theme');
 
-
     const handleOnClick = () => {
-        if (localStorage.getItem('theme') === 'theme-dark') {
-            setTheme('theme-light');
-            setTogClass('light')
-        } else {
-            setTheme('theme-dark');
-            setTogClass('dark')
-        }
-        };
+        //default='theme-dark'
+        changeThemeState()
+    }
 
-        useEffect(() => {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTogClass('dark')
-            } else if (localStorage.getItem('theme') === 'theme-light') {
-                setTogClass('light')
-            }
-        }, 
-        [theme]);
+        const changeThemeState()
+        //see if theme is theme-dark
+        //set state to theme-light
+        //or set to theme-dark otherwise
+
+
+        //declare fnctn
+        // if session theme is dark
+        //set state to dark
+        //else set to light
 
   return (
         <div className="container--toggle">
