@@ -1,44 +1,68 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/toggle.css';
-import { setTheme } from '../utils/theme';
+import { setTheme } from '../utils/themes';
 
 function Toggle() {
-    const [toggleClass, setClass] = useState('dark');
-    let theme = localStorage.getItem('theme')
+    
+    //default dark mode
+    const [togClass, setTogClass] = useState(false);
 
-  const [togClass, setTogClass] = useState('dark');
-  //get current theme
-  let theme = localStorage.getItem('theme');
+    //light mode for screen readers
+    const [ariaActive, setAriaActive] = useState(true);
+
+    let theme = localStorage.getItem('theme');
+
+    const toggleAndChangeTheme = () => {
+        if(localStorage.getItem('theme') === 'theme-dark'){
+            setTheme('theme-light');
+            setAriaActive(true);
+            setTogClass(false);
+        } else {
+            setTheme('theme-dark');
+            setAriaActive(false);
+            setTogClass(true);
+        }
+    };
 
     const handleOnClick = () => {
-        //default='theme-dark'
-        changeThemeState()
-    }
+        toggleAndChangeTheme();
+    };
 
-        const changeThemeState()
-        //see if theme is theme-dark
-        //set state to theme-light
-        //or set to theme-dark otherwise
+    //focus & toggle on 'enter' 
+    const handleKeyPress = (e) => {
+        if(e.code === "Enter"){
+            toggleAndChangeTheme();
 
-
-        //declare fnctn
-        // if session theme is dark
-        //set state to dark
-        //else set to light
+        }
+    };
+    
+      useEffect(() => {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+            setAriaActive(true);
+            setTogClass(false);
+        } else if (localStorage.getItem('theme') === 'theme-light') {
+            setAriaActive(false);
+            setTogClass(true);
+        }
+    }, 
+    [theme]
+    );
 
   return (
         <div className="container--toggle">
-              {
-                togClass === "light" ?
-                <input type="checkbox" id="toggle" className="toggle--checkbox" onClick={handleOnClick} checked />
-                :
-                <input type="checkbox" id="toggle" className="toggle--checkbox" onClick={handleOnClick} />
-            }
-            <label htmlFor="toggle" className="toggle--label">
-                <span className="toggle--label-background"></span>
-            </label>
-        </div>
+            <input aria-label="dark mode toggle" role="switch" 
+            aria-checked={ariaActive} onKeyPress={handleKeyPress} 
+            type="checkbox" id="toggle" className="toggle--checkbox" 
+            onClick={handleOnClick} checked={togClass} readOnly 
+            />
+        <label htmlFor="toggle" className="toggle--label">
+          <span className="toggle--label-background"></span>
+          dark mode toggle
+        </label>
+      </div>
     )
-}
+};
 
 export default Toggle;
+
+        

@@ -47,7 +47,7 @@
 }
 
 .toggle--checkbox:focus + .toggle--label {
-  outline: solid 3px var(--button-border);
+  outline: solid 3.5px var(--button-border);
   transition: outline 100ms ease-in;
 }
 

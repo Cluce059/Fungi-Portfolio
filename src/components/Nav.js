@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 // import { capitalizeFirstLetter } from '../../utils/helpers';
 import { NavLink } from 'react-router-dom';
 import '../styles/nav.css';
@@ -22,8 +22,14 @@ function Nav() {
   };
 
   const extendElement = () => {
-    dropdown ? setDropdown(false) : setDropdown(true);
+    dropdown
+     ? setDropdown(false) : setDropdown(true);
   }
+
+  //toggle effect
+  useEffect(() => {
+    Toggle();
+  })
 
     return (
         <>
