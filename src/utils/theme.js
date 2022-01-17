@@ -1,7 +1,7 @@
 export function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
-}
+};
 
 export function keepTheme() {
   if (localStorage.getItem('theme')) {
@@ -13,5 +13,5 @@ export function keepTheme() {
   } else {
     setTheme('theme-dark')
   }
-}
+};
 

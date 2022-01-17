@@ -5,14 +5,19 @@ import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import 'dotenv';
 import { FaPaperPlane } from 'react-icons/fa';
-
+import{ init } from '@emailjs/browser';
+require('dotenv').config();
 /**implement 'role' tag for screen readers */
-const SERVICE_ID = process.env.SERVICE_ID;
-const TEMPLATE_ID = process.env.TEMPLATE_ID;
-const USER_ID = process.env.USER_ID;
+
 function ContactForm() {
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+    const USER_ID = process.env.REACT_APP_USER_ID;
+
 
   const handleOnSubmit = (e) => {
+  
+
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then((result) => {
@@ -42,7 +47,7 @@ function ContactForm() {
           className='form-control'
           control={Input}
           label='Email'
-          name='user_email'
+          name='email'
           placeholder='Email…'
           required
           icon='mail'
@@ -53,7 +58,7 @@ function ContactForm() {
           className='form-control'
           control={Input}
           label='Name'
-          name='user_name'
+          name='name'
           placeholder='Name…'
           required
           icon='user circle'
@@ -64,13 +69,13 @@ function ContactForm() {
           className='form-control'
           control={TextArea}
           label='Message'
-          name='user_message'
+          name='message'
           placeholder='Message…'
           required
         />
-        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="alt-send-button">
-          <i> <FaPaperPlane/></i><span class="send-text">SEND</span>
+        <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div className="alt-send-button">
+          <i> <FaPaperPlane/></i><span className="send-text">SEND</span>
         </div>
       
       </button>
