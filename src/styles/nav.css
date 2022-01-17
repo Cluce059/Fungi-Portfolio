@@ -7,7 +7,8 @@
 }
 
 .navbar {
-    background: linear-gradient(90deg, rgb(51, 32, 42) 0%, rgb(51, 31, 35) 100%);
+    background: linear-gradient(90deg, rgb(161, 64, 116) 0%, rgb(51, 31, 35) 100%);
+    border: var(--dark-purple) 3px solid;
     height: 80px;
     display: flex;
     justify-content: center;
