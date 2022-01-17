@@ -13,6 +13,7 @@ function Nav() {
   const handleClick = () => setClick(!click);
   const closeMobileView = () => setClick(false);
 
+  
   const onMouseEnter = () => {
     window.innerWidth < 960 ? setDropdown(false) : setDropdown(true);
   };
@@ -25,11 +26,6 @@ function Nav() {
     dropdown
      ? setDropdown(false) : setDropdown(true);
   }
-
-  //toggle effect
-  useEffect(() => {
-    Toggle();
-  })
 
     return (
         <>
@@ -69,7 +65,9 @@ function Nav() {
                          Get in Touch
                     </NavLink>
                   </li>
+                  <li className='nav-item'>
                   <Toggle/>
+                  </li>
                 </ul>
             </nav>
         </>

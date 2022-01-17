@@ -1,41 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/dropdown.css';
 import { Link } from 'react-router-dom';
+import DropItems from './DropDownItems';
 
 function Dropdown(prop) {
  
-const DropItems = [
-  {
-    title: 'Polypores',
-    path: '/Polypores',
-    cName: 'dropdown-link'
-  },
-  {
-    title: 'Gills & ridges',
-    path: '/gillsAndRidges',
-    cName: 'dropdown-link'
-
-  },
-  {
-    title: 'Teeth',
-    path: '/Teeth',
-    cName: 'dropdown-link'
-
-  },
-  {
-    title: 'Others',
-    path: '/Others',
-    cName: 'dropdown-link'
-
-  }
-];
-
-
   const [click, setClick] = useState(false);
-
  
-
-  return (
+ return (
     <>
       <ul
         onClick={prop.onCloseMobileView}

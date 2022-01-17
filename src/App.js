@@ -7,6 +7,7 @@ import Polypores from './components/Polypores';
 import Others from './components/Others';
 import Home from './pages/Home';
 import Contact from './components/Contact';
+import Categories from './pages/Categories';
 import NoMatch from './pages/NoMatch';
 import { keepTheme } from './utils/theme';
 
@@ -20,6 +21,7 @@ function App() {
     <Navbar />
     <Switch>
       <Route path='/' exact component={Home} />
+      <Route path='/categories' component={Categories} />
       <Route path='/gillsAndRidges' component={gillsAndRidges} />
       <Route path='/Polypores' component={Polypores} />
       <Route path='/Teeth' component={Teeth} />

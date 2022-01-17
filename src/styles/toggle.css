@@ -2,13 +2,13 @@
   /** sunny side **/
   --blue-background: #c2e9f6;
   --blue-border: #108DAD;
-  --blue-color: #96dcee;
-  --yellow-background: #fffaa8;
-  --yellow-border: #f5eb71;
+  --blue-color: hsl(192, 72%, 76%);
+  --yellow-background: #eea17d;
+  --yellow-border: #f1b863;
   /** dark side **/
   --indigo-background: #808fc7;
   --indigo-border: #808BBC;
-  --indigo-color: #6b7abb;
+  --indigo-color: #5f6ba0;
   --gray-border: #e8e8ea;
   --gray-dots: #e8e8ea;
 }
@@ -47,7 +47,7 @@
 }
 
 .toggle--checkbox:focus + .toggle--label {
-  outline: solid 3.5px var(--button-border);
+  outline: solid 3px var(--button-border);
   transition: outline 100ms ease-in;
 }
 
@@ -183,20 +183,20 @@
 }
 
 .theme-dark {
-    --dark-text: #292929;
+    --dark-text: #dbd4d4;
     --light-text: #F9F8F8;  
-    --dark-background: #2F4550;
-    --light-background: #586F7C;
-    --accent: #B8DBD9;
+    --dark-background: #00070a;
+    --light-background: #df9ddf;
+    --accent: #dbb8db;
     --button-border: #B8DBD9;
   }
   
 .theme-light {
-    --dark-text: #5E4B56;
-    --light-text: #5E4B56;
-    --dark-background: #DBE7E4;
-    --light-background: #EDDCD2;
-    --accent: #DBE7E4;
+    --dark-text: #00070a;
+    --light-text: #817d7f;
+    --dark-background: #edf5f3;
+    --light-background: #f3eae5;
+    --accent: #e7dbe5;
     --button-border: #5E4B56;
   }
   
