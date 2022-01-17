@@ -185,7 +185,7 @@
 .theme-dark {
     --dark-text: #dbd4d4;
     --light-text: #F9F8F8;  
-    --dark-background: #00070a;
+    --dark-background: #010507;
     --light-background: #df9ddf;
     --accent: #dbb8db;
     --button-border: #B8DBD9;
@@ -196,13 +196,14 @@
     --light-text: #817d7f;
     --dark-background: #edf5f3;
     --light-background: #f3eae5;
-    --accent: #e7dbe5;
+    --accent: #DBE7E4;
     --button-border: #5E4B56;
   }
   
   html, #root {
     background-color: var(--dark-background);
     color: var(--dark-text);
+    height: 100%;
   }
   
   nav {

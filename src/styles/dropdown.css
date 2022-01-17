@@ -4,7 +4,7 @@
     --green-sheen: #80ada0ff;
     --old-lavender: #5f5566ff;
     --dark-purple: #33202aff;
-    --black: #000000ff;
+    --dark: rgb(175, 162, 162);
   }
 
   .dropdown-menu {
@@ -32,7 +32,7 @@
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: var(--black);
+    color: var(--dark);
     padding: 16px;
   }
   
