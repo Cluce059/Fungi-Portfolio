@@ -77,8 +77,9 @@ function Toggle() {
           <span className="toggle--label-background"></span>
           mode
         </label>
+        <div class="copyright">&copy; Untitled. All rights reserved. Includes code by: <a href="https://abbeyperini.dev">Abbey Perini</a>.</div>
       </div>
-      <div class="copyright">&copy; Untitled. All rights reserved. Includes code by: <a href="https://abbeyperini.dev">Abbey Perini</a>.</div>
+
       </>
     )
 };

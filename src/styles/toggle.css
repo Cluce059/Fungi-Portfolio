@@ -214,3 +214,7 @@
   .main-container {
     background-color: var(--light-background);
   }
+
+  .copyright{
+    font-size: 7px;
+  }
