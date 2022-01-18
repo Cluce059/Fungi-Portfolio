@@ -1,5 +1,6 @@
 import React from 'react';
 //import { validateEmail } from '../../utils/helpers';
+import '../styles/contact.css';
 import { Form, Input, TextArea } from 'semantic-ui-react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';

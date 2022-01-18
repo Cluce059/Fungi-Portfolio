@@ -5,60 +5,43 @@
 
 .section-title{
     text-align: center;
-
-    color: rgb(15, 14, 14);
-    letter-spacing: 6px;
+    letter-spacing: 8px;
+    padding-top: 25px;
 }
 
 .contact-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: 0 auto;
     padding: 20px;
-    position: relative;
-    max-width: 840px;
-}
-
-.contact-form{
-    /*floats left => subject to change if u dont want anything on the right*/
-    max-width: 400px;
-    font-family: 'Lato';
-    font-weight: 400;
 }
 
 .form-control {
-  max-width: 400px;
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
 .send-button {
     margin-top: 15px;
-    height: 34px;
-    width: 400px;
+    height: 65px;
+    width: 100%;
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
-  
+ 
   .alt-send-button {
-    width: 400px;
-    height: 34px;
     transition: all .2s ease-in-out;
   }
-  
+
   .send-text {
     display: block;
-    margin-top: 10px;
-    font: 700 12px 'Lato', sans-serif;
-    letter-spacing: 2px;
-  }
-  
-  .alt-send-button:hover {
-    transform: translate3d(0px, -29px, 0px);
-  }
-
+    margin-top: 5px;
+    font: 700 18px 'Lato', sans-serif;
+    letter-spacing: 3px;
+}
+ 
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+/*
 @media screen and (max-width: 850px) {
     .contact-wrapper {
       display: flex;
@@ -76,4 +59,6 @@
     .send-button {
       width: 99%;
     }
-  }
+  } 
+  
+  */
