@@ -55,6 +55,7 @@ function Toggle() {
 
 
   return (
+      <>
         <div className="container--toggle">
 
         {
@@ -77,6 +78,8 @@ function Toggle() {
           mode
         </label>
       </div>
+      <div class="copyright">&copy; Untitled. All rights reserved. Includes code by: <a href="https://abbeyperini.dev">Abbey Perini</a>.</div>
+      </>
     )
 };
 

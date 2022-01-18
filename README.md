@@ -5,14 +5,16 @@
   ## Description
   🔍 This is where I store and catagorize my fungus finds! Feel free to contact me for questions, concerns, or just want to say hey!
   ## Table of Contents
-  - [Live App](#Live SApp)
+  - [Live App](#Live App)
   - [Description](#description)
   - [License](#license)
   - [Contributing](#contributing)
   - [Questions](#questions)
+  - [About Me](#About Me)
+  - [Acknowledgments](#Acknowledgements)
 
-  ## liveApp
-    [insert live link]
+  ## Live App
+    [insert app link when deployed]
 
   ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -23,9 +25,12 @@
 
   ## Questions
   👽 Send me a message from the "Contact" section<br />
+
+  ## About Me
+  [Cluce059](https://github.com/Cluce059)
   
-  <br />
-  :octocat: Find me on GitHub: [Cluce059](https://github.com/Cluce059)<br />
-  <br />
+  ## Acknowledgments 
+   [Abbey Perini](https://abbeyperini.dev )
+  
   💬 Email: Cluce059@gmail.com<br /><br />
   _This README was generated with ❤️ by [README-generator](https://github.com/Cluce059/readme-generator) 	👀👀👀_
